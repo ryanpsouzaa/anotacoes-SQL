@@ -1,28 +1,24 @@
-## SQL -> Structured query language (linguagem de consulta estruturada)
+## <span style="color: steelblue;"> SQL -> Structured query language (linguagem de consulta estruturada) </span>
 
 
-<ins> Mostrar todos os dados da tabelapedidos </ins>
+### <span style="color: steelblue;">Mostrar todos os dados da tabelapedidos</span>
 ``` 
 SELECT * FROM tabelapedidos;
 ```
 
-<ins> WHERE: clausula para indicar de onde esta algo
-Selecione os pedidos que possuem pais_origem = China </ins>
-
+### <span style="color: steelblue;">WHERE: clausula para indicar de onde esta algo</span>
++ Selecione os pedidos que possuem pais_origem = China
 ```
 SELECT * FROM tabelapedidos WHERE pais_origem = 'China';
 ```
 
-<ins> DISTINCT: seleciona apenas valores unicos (sem repeticao)
-Selecione os clientes (sem repetir o mesmo cliente) da tabelapedidos </ins>
-
+### <span style="color: steelblue;">DISTINCT: seleciona apenas valores unicos (sem repeticao)</span>
++ Selecione os clientes (sem repetir o mesmo cliente) da tabelapedidos
 ```
 SELECT DISTINCT cliente FROM tabelapedidos;
 ```
 
-
-<ins> Selecione os clientes (sem repetir o mesmo cliente) que possui um pedido com status 'Pendente' </ins>
-
++ Selecione os clientes (sem repetir o mesmo cliente) que possui um pedido com status 'Pendente'
 ```
 SELECT DISTINCT cliente FROM tabelapedidos WHERE status = 'Pendente';
 ```
